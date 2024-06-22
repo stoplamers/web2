@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Playfair+Display:wght@700&display=swap');
+@import url('https://fonts.cdnfonts.com/css/comic-sans');
+
+#all {
+    background-color:#ffffff;
+    padding: 0 25px;
+    margin: 0 10%;
+    border: solid 5px black;
+    padding-bottom: 25px;
+}
+
+#footer {
+    background-color:black;
+    border: solid 5px black;
+    padding: 10 25px;
+    margin: 0 10%;
+    color: white;
+    text-align: right;
+}
+
+#tsl {
+    margin-top: 30px;
+    margin-bottom: 0;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 64pt;
+    width: auto;
+}
+
+body {
+    background-color: #6bb6de; 
+    font-family: 'Merriweather', serif;
+}
+
+h1 {
+    margin-top: 0px;
+    text-align: center;
+    font-size: 36pt;
+    font-family: 'Comic Sans', sans-serif; 
+    margin-bottom: 20px;
+}
+
+h2 {
+    text-align: center;
+    font-size: 24pt;
+    font-family: 'Playfair Display', serif;
+    margin-bottom: 16px;
+}
+
+h3 {
+    text-align: left;
+    font-size: 18pt;
+    font-family: 'Comic Sans', sans-serif; 
+    margin-bottom: 12px;
+}
+
+p {
+    margin-top: 6px;
+    margin-bottom: 10px;
+}
+
+table {
+    width: 100%;
+}
+
+table, th, td {
+    border: 3px solid black;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 2px 5px;
+}
+
+.gallery-post {
+    display: flex;
+    overflow: auto;
+}
+
+/* width */
+.gallery-post::-webkit-scrollbar {
+    width: 10px;
+}
+.gallery-post::-webkit-scrollbar-track {
+    background: black;
+}
+.gallery-post::-webkit-scrollbar-thumb {
+    background: #6bb6de;
+}
+.gallery-post::-webkit-scrollbar-thumb:hover {
+    background: #2989bc
+    ;
+}
+
+.gallery-post::-webkit-scrollbar-button {
+    width: 0;
+}
+
+.gallery-post > a > img {
+    height: 200px;
+    padding-right: 10px;
+}
+
+.gallery-post:last-child > img{
+    padding-right: 0px;
+}
+
+@media screen and (max-width:600px) {
+    body, html {
+        margin: 0;
+        background-color: white;
+    }
+    #all, #footer{
+        margin: 0;
+        border: 0;
+    }
+}
+
+@media screen and (min-width:1080px) {
+    #all, #footer {
+        margin: auto;
+        max-width: 600px;
+    }
+}
