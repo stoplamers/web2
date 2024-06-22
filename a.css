@@ -123,3 +123,17 @@ th, td {
         max-width: 600px;
     }
 }
+
+.crypto_address {
+    font-family: monospace;
+    overflow-wrap:anywhere
+}
+
+ul {
+    padding: 16px;
+}
+
+.crypto_address {
+    font-family: monospace;
+    overflow-wrap:anywhere;
+}
